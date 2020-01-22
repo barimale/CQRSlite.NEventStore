@@ -1,13 +1,13 @@
-﻿using CQRSlite.Caching;
-using CQRSlite.Domain;
+﻿using CQRSlite.Domain;
 using CQRSlite.Events;
 using CQRSlite.Snapshotting;
 using CQRSLite.NEventStore.WriteModel.EventStore;
 using CQRSLite.NEventStore.WriteModel.EventStore.SnapshotStore;
 using NEventStore;
 using Ninject.Modules;
+using IConnectionFactory = NEventStore.Persistence.Sql.IConnectionFactory;
 
-namespace CQRSlite.Extensions.Configuration
+namespace CQRSLite.NEventStore.Configuration
 {
     public class Bindings : NinjectModule
     {
@@ -15,7 +15,7 @@ namespace CQRSlite.Extensions.Configuration
         {
             try
             {
-                Bind<NEventStore.Persistence.Sql.IConnectionFactory>()
+                Bind<IConnectionFactory>()
                 .To<EnviromentConnectionFactory>()
                 .InSingletonScope()
                 .WithConstructorArgument("connectionStringName", "EventStore");
