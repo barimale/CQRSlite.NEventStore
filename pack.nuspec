@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
 		<metadata>
 			<id>CQRSLite.NEventStore</id>
-			<version>1.0.5</version>
+			<version>1.0.6</version>
 			<description>SnapshotStore implemented for NEventStore used together with CQRSLite.</description>
 			<authors>barimale</authors>
 			<owners>barimale</owners>
@@ -17,7 +17,7 @@
 					<dependency id="CqrsLite" version="0.29.0" exclude="Build,Analyzers" />
 					<dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
 					<dependency id="Ninject" version="3.3.4" exclude="Build,Analyzers" />
-					<dependency id="SqlTableDependency" version="8.5.6" exclude="Build,Analyzers" />
+					<dependency id="SqlTableDependency" version="8.5.8" exclude="Build,Analyzers" />
 					<dependency id="System.Collections.Immutable" version="1.7.0" exclude="Build,Analyzers" />
 				</group>
 				<group targetFramework=".NETStandard2.0">
@@ -27,7 +27,7 @@
 					<dependency id="CqrsLite" version="0.29.0" exclude="Build,Analyzers" />
 					<dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
 					<dependency id="Ninject" version="3.3.4" exclude="Build,Analyzers" />
-					<dependency id="SqlTableDependency" version="8.5.6" exclude="Build,Analyzers" />
+					<dependency id="SqlTableDependency" version="8.5.8" exclude="Build,Analyzers" />
 					<dependency id="System.Collections.Immutable" version="1.7.0" exclude="Build,Analyzers" />
 				</group>
 				<group targetFramework=".NETStandard2.1">
@@ -37,7 +37,7 @@
 					<dependency id="CqrsLite" version="0.29.0" exclude="Build,Analyzers" />
 					<dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
 					<dependency id="Ninject" version="3.3.4" exclude="Build,Analyzers" />
-					<dependency id="SqlTableDependency" version="8.5.6" exclude="Build,Analyzers" />
+					<dependency id="SqlTableDependency" version="8.5.8" exclude="Build,Analyzers" />
 					<dependency id="System.Collections.Immutable" version="1.7.0" exclude="Build,Analyzers" />
 				</group>
 				<group targetFramework=".NETCoreApp3.0">
@@ -47,7 +47,7 @@
 					<dependency id="CqrsLite" version="0.29.0" exclude="Build,Analyzers" />
 					<dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
 					<dependency id="Ninject" version="3.3.4" exclude="Build,Analyzers" />
-					<dependency id="SqlTableDependency" version="8.5.6" exclude="Build,Analyzers" />
+					<dependency id="SqlTableDependency" version="8.5.8" exclude="Build,Analyzers" />
 					<dependency id="System.Collections.Immutable" version="1.7.0" exclude="Build,Analyzers" />
 				</group>
 			</dependencies>
