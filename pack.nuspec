@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
 		<metadata>
 			<id>CQRSLite.NEventStore</id>
-			<version>1.0.3</version>
+			<version>1.0.4</version>
 			<description>SnapshotStore implemented for NEventStore used together with CQRSLite.</description>
 			<authors>barimale</authors>
 			<owners>barimale</owners>
@@ -30,6 +30,26 @@
 					<dependency id="SqlTableDependency" version="8.5.6" exclude="Build,Analyzers" />
 					<dependency id="System.Collections.Immutable" version="1.7.0" exclude="Build,Analyzers" />
 				</group>
+				<group targetFramework=".NETStandard2.1">
+					<dependency id="NEventStore" version="7.0.0" exclude="Build,Analyzers" />
+					<dependency id="NEventStore.Persistence.Sql" version="7.2.0" exclude="Build,Analyzers" />
+					<dependency id="CQRSlite.Extensions" version="1.0.1" exclude="Build,Analyzers" />
+					<dependency id="CqrsLite" version="0.29.0" exclude="Build,Analyzers" />
+					<dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+					<dependency id="Ninject" version="3.3.4" exclude="Build,Analyzers" />
+					<dependency id="SqlTableDependency" version="8.5.6" exclude="Build,Analyzers" />
+					<dependency id="System.Collections.Immutable" version="1.7.0" exclude="Build,Analyzers" />
+				</group>
+				<group targetFramework=".NETCoreApp3.0">
+					<dependency id="NEventStore" version="7.0.0" exclude="Build,Analyzers" />
+					<dependency id="NEventStore.Persistence.Sql" version="7.2.0" exclude="Build,Analyzers" />
+					<dependency id="CQRSlite.Extensions" version="1.0.1" exclude="Build,Analyzers" />
+					<dependency id="CqrsLite" version="0.29.0" exclude="Build,Analyzers" />
+					<dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+					<dependency id="Ninject" version="3.3.4" exclude="Build,Analyzers" />
+					<dependency id="SqlTableDependency" version="8.5.6" exclude="Build,Analyzers" />
+					<dependency id="System.Collections.Immutable" version="1.7.0" exclude="Build,Analyzers" />
+				</group>
 			</dependencies>
 		</metadata>
 	<files>
@@ -37,5 +57,9 @@
 		<file src="CQRSLite.NEventStore\bin\Release\net47\CQRSLite.NEventStore.pdb" target="lib\net47" />
 		<file src="CQRSlite.NEventStore\bin\Release\netstandard2.0\CQRSLite.NEventStore.dll" target="lib\netstandard2.0" />
 		<file src="CQRSLite.NEventStore\bin\Release\netstandard2.0\CQRSLite.NEventStore.pdb" target="lib\netstandard2.0" />
+		<file src="CQRSlite.NEventStore\bin\Release\netcoreapp3.0\CQRSLite.NEventStore.dll" target="lib\netcoreapp3.0" />
+		<file src="CQRSLite.NEventStore\bin\Release\netcoreapp3.0\CQRSLite.NEventStore.pdb" target="lib\netcoreapp3.0" />
+		<file src="CQRSlite.NEventStore\bin\Release\netstandard2.1\CQRSLite.NEventStore.dll" target="lib\netstandard2.1" />
+		<file src="CQRSLite.NEventStore\bin\Release\netstandard2.1\CQRSLite.NEventStore.pdb" target="lib\netstandard2.1" />
 	</files>
 </package>
