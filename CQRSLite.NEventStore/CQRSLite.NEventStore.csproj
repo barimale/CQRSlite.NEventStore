@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.0;netstandard2.1;netstandard2.0;net47</TargetFrameworks>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <FileVersion>1.0.4.0</FileVersion>
-    <Version>1.0.4.0</Version>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <FileVersion>1.0.5.0</FileVersion>
+    <Version>1.0.5.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>barimale</Authors>
     <Description>Extensions of CQRSlite package provided as a set of base classes.</Description>
@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <PackageReference Include="CqrsLite" Version="0.29.0" />
-    <PackageReference Include="CQRSlite.Extensions" Version="1.0.5" />
+    <PackageReference Include="CQRSlite.Extensions" Version="1.0.6" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="3.1.0" />
     <PackageReference Include="NEventStore" Version="7.0.0" />
     <PackageReference Include="NEventStore.Persistence.Sql" Version="7.2.0" />
