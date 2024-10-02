@@ -21,3 +21,4 @@ bin
 /.vs/CQRSLite.NEventStore/v16
 /CQRSLite.NEventStore/CQRSLite.NEventStore.csproj.user
 /.vs/CQRSLite.NEventStore/DesignTimeBuild
+/.vs/CQRSLite.NEventStore
