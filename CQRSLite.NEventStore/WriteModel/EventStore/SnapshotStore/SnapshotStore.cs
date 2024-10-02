@@ -2,7 +2,6 @@
 using CQRSlite.Extensions.WriteModel.Domain;
 using CQRSlite.Snapshotting;
 using NEventStore;
-using NEventStore.Logging;
 using NEventStore.Persistence;
 using NEventStore.Persistence.Sql.SqlDialects;
 using System;
@@ -37,12 +36,10 @@ namespace CQRSLite.NEventStore.WriteModel.EventStore.SnapshotStore
                 {
                     eventStore = Wireup
                     .Init()
-                    .LogToOutputWindow()
                     .UsingSqlPersistence(_enviromentConnectionFactory)
                     .WithDialect(new MsSqlDialect())
                     .InitializeStorageEngine()
                     .UsingBinarySerialization()
-                    .LogToConsoleWindow(LogLevel.Verbose)
                     .Build();
                 }
 
